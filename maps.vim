@@ -9,7 +9,7 @@ let vim_markdown_preview_pandoc=1
 let vim_markdown_preview_browser='firefox'
 let vim_markdown_preview_use_xdg_open=1
 
-
+nnoremap <C-b>       :Buffers<CR>
 nnoremap <Leader>gb  :Git blame<CR>
 nnoremap <Leader>gg  :Magit<CR>
 nnoremap <Leader>q'  ciw''<Esc>P
@@ -19,6 +19,7 @@ nnoremap <Leader>q{  ciw{}<Esc>P
 nnoremap <Leader>q[  ciw[]<Esc>P
 nnoremap <Leader>cc  :call Generate_comments() <CR>
 nnoremap <Leader>ii  :e ~/.config/nvim/init.vim <CR>
+nnoremap <Leader>bf  :Black<CR>
 
 nnoremap <Leader>vt  :VimwikiTable 2 2
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
@@ -30,7 +31,6 @@ nnoremap <Leader>pp  :NERDTreeFind<CR>
 nnoremap <Leader>n   :NERDTree
 "Dir lavoro
 nnoremap <Leader>nl   :NERDTree $HOME/lavoro/<CR>
-nnoremap <F2>	     :TagbarToggle<CR>
 nnoremap <C-d>	     :bd<CR>
 "remove trailing whitespaces
 nnoremap <F8>	     :%s/\s\+$//e

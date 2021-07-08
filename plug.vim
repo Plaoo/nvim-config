@@ -29,5 +29,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'jacoborus/tender.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'sainnhe/sonokai'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'airblade/vim-gitgutter'
 call plug#end()
 
