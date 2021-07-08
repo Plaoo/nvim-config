@@ -47,8 +47,6 @@ colorscheme sonokai
 "
 hi Search guibg=DarkGrey guifg=Black
 
-"au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
-
 
 lua << EOF
 require'lspconfig'.pyright.setup{}
