@@ -20,7 +20,7 @@ nnoremap <Leader>q[  ciw[]<Esc>P
 nnoremap <Leader>cc  :call Generate_comments() <CR>
 nnoremap <Leader>ii  :e ~/.config/nvim/init.vim <CR>
 nnoremap <Leader>bf  :Black<CR>
-
+nnoremap <C-p>	     :MarkdownPreview<CR>
 nnoremap <Leader>vt  :VimwikiTable 2 2
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 

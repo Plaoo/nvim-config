@@ -34,6 +34,15 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
+""" Vim Wiki
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+let vim_markdown_preview_github=0
+let vim_markdown_preview_perl=0
+let vim_markdown_preview_pandoc=1
+let vim_markdown_preview_browser='firefox'
+let vim_markdown_preview_use_xdg_open=1
+
 " For Neovim 0.1.3 and 0.1.4
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
