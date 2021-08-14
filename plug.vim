@@ -14,7 +14,9 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'psf/black'
     Plug 'MattesGroeger/vim-bookmarks'
-    Plug 'jreybert/vimagit'
+    "Plug 'jreybert/vimagit'
+    Plug 'TimUntersberger/neogit'
+    Plug 'nvim-lua/plenary.nvim'
     Plug 'simeji/winresizer' "Ctrl + e e poi hjkl
     Plug 'ap/vim-buftabline'
     Plug 'terryma/vim-multiple-cursors'
@@ -33,5 +35,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'ryanoasis/vim-devicons'
     Plug 'airblade/vim-gitgutter'
     Plug 'jiangmiao/auto-pairs'
+    Plug 'preservim/tagbar'
 call plug#end()
 
