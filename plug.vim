@@ -14,7 +14,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'psf/black'
     Plug 'MattesGroeger/vim-bookmarks'
-    "Plug 'jreybert/vimagit'
     Plug 'TimUntersberger/neogit'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'simeji/winresizer' "Ctrl + e e poi hjkl

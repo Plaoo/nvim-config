@@ -10,6 +10,7 @@ let vim_markdown_preview_browser='firefox'
 let vim_markdown_preview_use_xdg_open=1
 
 nnoremap <C-b>       :Buffers<CR>
+nnoremap <Leader>ff  :Ag 
 nnoremap <Leader>gb  :Git blame<CR>
 nnoremap <Leader>gg  :Neogit<CR>
 nnoremap <Leader>q'  ciw''<Esc>P

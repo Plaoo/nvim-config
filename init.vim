@@ -25,6 +25,8 @@ set ruler	" Show row and column ruler information
 set cursorline
 set backspace=indent,eol,start	" Backspace behaviour
 
+
+""" NON RIMUOVERE!!
 noremap <Space> <Nop>
 
 """ Read maps
