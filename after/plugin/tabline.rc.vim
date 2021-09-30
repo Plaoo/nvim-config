@@ -12,7 +12,6 @@ function MyTabLine()
 
     " set the tab page number (for mouse clicks)
     let s .= '%' . (i + 1) . 'T'
-
     " the label is made by MyTabLabel()
     let s .= ' %{MyTabLabel(' . (i + 1) . ')} '
 

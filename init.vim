@@ -51,7 +51,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 " Theme
 syntax enable
 set termguicolors
-colorscheme sonokai
+colorscheme PaperColor
 "runtime g:neosolarized_termtrans=1
 "runtime ./colors/NeoSolarized.vim
 "colorscheme NeoSolarized
@@ -63,6 +63,11 @@ lua << EOF
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.html.setup{}
 require'lspconfig'.jsonls.setup{}
+require'lspconfig'.gopls.setup{}
+require'lspconfig'.rust_analyzer.setup{}
+require'lspconfig'.hls.setup{}
+require'lspconfig'.clangd.setup{}
+
 EOF
 
 

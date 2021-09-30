@@ -21,6 +21,7 @@ nnoremap <Leader>q[  ciw[]<Esc>P
 nnoremap <Leader>cc  :call Generate_comments() <CR>
 nnoremap <Leader>ii  :e ~/.config/nvim/ <CR>
 nnoremap <Leader>bf  :Black<CR>
+nnoremap <Leader>ss  :w<CR>
 nnoremap <C-p>	     :MarkdownPreview<CR>
 nnoremap <Leader>vt  :VimwikiTable 2 2
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
@@ -32,7 +33,7 @@ nnoremap <Leader>pp  :NERDTreeFind<CR>
 nnoremap <Leader>n   :NERDTree
 "Dir lavoro
 nnoremap <Leader>nl   :NERDTree $HOME/lavoro/<CR>
-nnoremap <C-d>	     :bd<CR>
+nnoremap <C-d>	      :bd<CR>
 "remove trailing whitespaces
 nnoremap <F8>	     :%s/\s\+$//e
 " tagbar
