@@ -26,7 +26,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'mfussenegger/nvim-dap'
     Plug 'neovim/nvim-lspconfig'
     Plug 'kabouzeid/nvim-lspinstall'
-    Plug 'hrsh7th/nvim-compe'
+    "Plug 'hrsh7th/nvim-compe'
     Plug 'glepnir/lspsaga.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
     Plug 'projekt0n/github-nvim-theme'
@@ -48,3 +48,4 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'preservim/tagbar'
 call plug#end()
 
+"lua require("coq")

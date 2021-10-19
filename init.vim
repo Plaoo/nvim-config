@@ -25,10 +25,8 @@ set ruler	" Show row and column ruler information
 set cursorline
 set backspace=indent,eol,start	" Backspace behaviour
 
-
 """ NON RIMUOVERE!!
 noremap <Space> <Nop>
-
 """ Read maps
 runtime ./maps.vim
 " If you have vim >=8.0 or Neovim >= 0.1.5
@@ -36,6 +34,10 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
+""" coq_nvim
+let g:coq_settings = { 'auto_start': v:true }
+let g:coq_settings = { 'keymap.jump_to_mark' : '' }
+"
 """ Vim Wiki
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
@@ -58,16 +60,16 @@ colorscheme catppuccino
 "colorscheme NeoSolarized
 "
 hi Search guibg=DarkGrey guifg=Black
-" require'lspconfig'.html.setup{}
-" require'lspconfig'.jsonls.setup{}
-" require'lspconfig'.gopls.setup{}
-" require'lspconfig'.rust_analyzer.setup{}
-" require'lspconfig'.hls.setup{}
-" require'lspconfig'.clangd.setup{}
 
 
 lua << EOF
 require'lspconfig'.pyright.setup{}
+require'lspconfig'.html.setup{}
+require'lspconfig'.jsonls.setup{}
+require'lspconfig'.gopls.setup{}
+require'lspconfig'.rust_analyzer.setup{}
+require'lspconfig'.hls.setup{}
+require'lspconfig'.clangd.setup{}
 
 EOF
 

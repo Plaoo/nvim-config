@@ -1,6 +1,8 @@
 noremap <Space> <Nop>
 let mapleader=' '
 
+""" coq_nvim autocmpletition
+let g:coq_settings = { 'keymap.jump_to_mark' : '' }
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 let vim_markdown_preview_github=0
@@ -39,9 +41,9 @@ nnoremap <F8>	     :%s/\s\+$//e
 " tagbar
 nnoremap <F2>	     :TagbarToggle<CR>
 "tabs
-set hidden
 nnoremap <C-l>	     :bnext<CR>
-nnoremap <C-h>       :bprev<CR>
+nnoremap <C-h>	     :bprev<CR>
+
 
 """ Functions
 function! Generate_comments()
