@@ -48,25 +48,26 @@ let vim_markdown_preview_use_xdg_open=1
 " For Neovim 0.1.3 and 0.1.4
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
+let g:coq_settings = { 'auto_start': v:true }
 " Theme
 syntax enable
 set termguicolors
-colorscheme PaperColor
+colorscheme catppuccino
 "runtime g:neosolarized_termtrans=1
 "runtime ./colors/NeoSolarized.vim
 "colorscheme NeoSolarized
 "
 hi Search guibg=DarkGrey guifg=Black
+" require'lspconfig'.html.setup{}
+" require'lspconfig'.jsonls.setup{}
+" require'lspconfig'.gopls.setup{}
+" require'lspconfig'.rust_analyzer.setup{}
+" require'lspconfig'.hls.setup{}
+" require'lspconfig'.clangd.setup{}
 
 
 lua << EOF
 require'lspconfig'.pyright.setup{}
-require'lspconfig'.html.setup{}
-require'lspconfig'.jsonls.setup{}
-require'lspconfig'.gopls.setup{}
-require'lspconfig'.rust_analyzer.setup{}
-require'lspconfig'.hls.setup{}
-require'lspconfig'.clangd.setup{}
 
 EOF
 

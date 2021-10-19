@@ -1,4 +1,6 @@
 lua << EOF
+require("coq")
+
 local nvim_lsp = require('lspconfig')
 
 local on_attach = function(client, bufnr)
@@ -13,10 +15,12 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
 
   require'completion'.on_attach(client, bufnr)
+
 end
 
 -- add servers
 local servers = { "pyright", "rust_analyzer", "gopls","html", "jsonls", "hls", "clangd" }
+
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,

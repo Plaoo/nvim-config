@@ -46,20 +46,20 @@ nnoremap <C-h>       :bprev<CR>
 """ Functions
 function! Generate_comments()
     let snippet = [
-          \ '""" Return a random page.',
-          \ '',
-          \ '    Performs a GET request to the /page/random/summary endpoint.',
-          \ '',
-          \ '    Args:',
-          \ '        language: The Wikipedia language edition. By default, the English',
-          \ '',
-          \ '    Returns:',
-          \ '        A page resource.',
-          \ '',
-          \ '    Raises:',
-          \ '        ClickException: The HTTP request failed or the HTTP response',
-          \ '        contained an invalid body.',
-          \ '"""']
+	  \ '"""Returns a list containing :class:`bluepy.btle.Characteristic`',
+          \ 'objects for the peripheral. If no arguments are given, will return all',
+          \ 'characteristics. If startHnd and/or endHnd are given, the list is',
+          \ 'restricted to characteristics whose handles are within the given range.',
+	  \ '',
+          \ ':param startHnd: Start index, defaults to 1',
+          \ ':type startHnd: int, optional',
+          \ ':param endHnd: End index, defaults to 0xFFFF',
+          \ ':type endHnd: int, optional',
+          \ ':param uuids: a list of UUID strings, defaults to None',
+          \ ':type uuids: list, optional',
+          \ ':return: List of returned :class:`bluepy.btle.Characteristic` objects',
+          \ ':rtype: list',
+          \ '"""',]
     call append(line('.'), snippet)
 endfunction
 
