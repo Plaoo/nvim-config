@@ -26,6 +26,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'mfussenegger/nvim-dap'
     Plug 'neovim/nvim-lspconfig'
     Plug 'kabouzeid/nvim-lspinstall'
+    Plug  'mhartington/oceanic-next'
+    Plug 'dracula/vim', { 'as': 'dracula' }
     "Plug 'hrsh7th/nvim-compe'
     Plug 'glepnir/lspsaga.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
@@ -46,6 +48,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'jiangmiao/auto-pairs'
     Plug 'preservim/tagbar'
+
 call plug#end()
 
 "lua require("coq")

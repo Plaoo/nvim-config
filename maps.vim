@@ -26,15 +26,19 @@ nnoremap <Leader>bf  :Black<CR>
 nnoremap <Leader>ss  :w<CR>
 nnoremap <C-p>	     :MarkdownPreview<CR>
 nnoremap <Leader>vt  :VimwikiTable 2 2
+" Snippet selection with space COQ-nvim
+inoremap <silent><expr> <Space> complete_info(['selected']).selected != -1 ? "<C-Y>" : "<Space>"
+
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
-"Current path
 nnoremap <Leader>nn  :NERDTreeToggle<CR>
-"Current file
+nnoremap <Leader>pp  :NERDTreeFind<CR>
 nnoremap <Leader>pp  :NERDTreeFind<CR>
 nnoremap <Leader>n   :NERDTree
-"Dir lavoro
-nnoremap <Leader>nl   :NERDTree $HOME/lavoro/<CR>
+nnoremap <Leader>ll  :Files<CR>
+""Dir lavoro
+"nnoremap <Leader>nl   :NERDTree $HOME/lavoro/<CR>
+
 nnoremap <C-d>	      :bd<CR>
 "remove trailing whitespaces
 nnoremap <F8>	     :%s/\s\+$//e

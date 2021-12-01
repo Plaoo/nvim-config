@@ -11,7 +11,7 @@ set hlsearch	" Highlight all search results
 set smartcase	" Enable smart-case search
 set ignorecase	" Always case-insensitive
 set incsearch	" Searches for strings incrementally
-"autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=None
+" autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=None
 set autoindent	" Auto-indent new lines
 set shiftwidth=4	" Number of auto-indent spaces
 set smartindent	" Enable smart-indent
@@ -24,6 +24,7 @@ syntax on
 set ruler	" Show row and column ruler information
 set cursorline
 set backspace=indent,eol,start	" Backspace behaviour
+set hidden " No save
 
 """ NON RIMUOVERE!!
 noremap <Space> <Nop>
@@ -38,23 +39,23 @@ endif
 let g:coq_settings = { 'auto_start': v:true }
 let g:coq_settings = { 'keymap.jump_to_mark' : '' }
 "
-""" Vim Wiki
-let g:vimwiki_list = [{'path': '~/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
-let vim_markdown_preview_github=0
-let vim_markdown_preview_perl=0
-let vim_markdown_preview_pandoc=1
-let vim_markdown_preview_browser='firefox'
-let vim_markdown_preview_use_xdg_open=1
+"""" Vim Wiki
+"let g:vimwiki_list = [{'path': '~/vimwiki/',
+"                      \ 'syntax': 'markdown', 'ext': '.md'}]
+"let vim_markdown_preview_github=0
+"let vim_markdown_preview_perl=0
+"let vim_markdown_preview_pandoc=1
+"let vim_markdown_preview_browser='firefox'
+"let vim_markdown_preview_use_xdg_open=1
 
 " For Neovim 0.1.3 and 0.1.4
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
-let g:coq_settings = { 'auto_start': v:true }
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
 " Theme
 syntax enable
 set termguicolors
-colorscheme catppuccino
+colorscheme dracula
 "runtime g:neosolarized_termtrans=1
 "runtime ./colors/NeoSolarized.vim
 "colorscheme NeoSolarized
