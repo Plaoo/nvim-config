@@ -46,7 +46,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'sainnhe/sonokai'
     Plug 'ryanoasis/vim-devicons'
     Plug 'airblade/vim-gitgutter'
-    Plug 'jiangmiao/auto-pairs'
+    "#Plug 'jiangmiao/auto-pairs'
     Plug 'preservim/tagbar'
 
 call plug#end()
