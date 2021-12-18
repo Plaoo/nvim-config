@@ -33,5 +33,6 @@ Plug('ms-jpq/coq.artifacts', {branch='artifacts'})
 Plug('ms-jpq/coq.thirdparty', {branch= '3p'})
 Plug('hoob3rt/lualine.nvim')
 Plug('nvim-treesitter/nvim-treesitter')
-
+Plug('ziglang/zig.vim')
+Plug('ryanoasis/vim-devicons')
 vim.call('plug#end')

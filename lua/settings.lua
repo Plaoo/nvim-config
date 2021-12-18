@@ -18,6 +18,7 @@ opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 opt.swapfile = false          -- don't use swapfile
 
 opt.relativenumber = true     -- show line number
+opt.number = true             -- show current line number
 opt.showmatch = true          -- highlight matching parenthesis
 opt.foldmethod = 'marker'     -- enable folding (default 'foldmarker')
 opt.splitright = true         -- vertical split to the right
@@ -65,4 +66,5 @@ opt.shortmess:append "sI"
 -- Colorscheme
 -----------------------------------------------------------
 opt.termguicolors = true      -- enable 24-bit RGB colors
+
 cmd [[colorscheme dracula]]

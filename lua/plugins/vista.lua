@@ -5,7 +5,6 @@
 -- Plugin: vista.vim
 -- https://github.com/liuchengxu/vista.vim
 
-
 local g = vim.g
 local cmd = vim.cmd
 

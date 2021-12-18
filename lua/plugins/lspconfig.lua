@@ -16,7 +16,7 @@ local on_attach = function(client, bufnr)
 end
 
 -- add servers
-local servers = { "pyright", "rust_analyzer", "gopls","html", "jsonls", "hls", "clangd" }
+local servers = { "pyright", "zls", "rust_analyzer", "jsonls", "clangd" }
 
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
