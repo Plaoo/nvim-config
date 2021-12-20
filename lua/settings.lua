@@ -12,7 +12,6 @@ local fn = vim.fn       				-- call Vim functions
 local g = vim.g         				-- global variables
 local opt = vim.opt         		-- global/buffer/windows-scoped options
 
-g.mapleader = ' '             -- change leader to a space
 --opt.mouse = 'a'               -- enable mouse support
 opt.clipboard = 'unnamedplus' -- copy/paste to system clipboard
 opt.swapfile = false          -- don't use swapfile
@@ -35,7 +34,7 @@ exec([[
   augroup end
 ]], false)
 
-opt.hidden = true         -- enable background buffers
+opt.hidden = true         
 opt.history = 200         -- remember n lines in history
 opt.lazyredraw = true     -- faster scrolling
 opt.synmaxcol = 240       -- max column for syntax highlight

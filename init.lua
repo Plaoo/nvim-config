@@ -5,12 +5,13 @@ require('plugins/nvim-tree')
 -- TO FIX
 -- require('plugins/vista')
 require('plugins/lualine')
-require('plugins/lspconfig')
 require('plugins/zig')
 require('plugins/fzf')
 require('plugins/treesitter')
+require('plugins/coq')
+require('plugins/lspconfig')
+require('languages/pyright_lsp')
+require('languages/zls_lsp')
+require('languages/jsonls_lsp')
+require('languages/clangd_lsp')
 
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.zls.setup{}
-require'lspconfig'.jsonls.setup{}
-require'lspconfig'.clangd.setup{}
