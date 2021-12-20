@@ -6,6 +6,7 @@ Plug('dracula/vim', {as = 'dracula'})
 Plug('tpope/vim-fugitive')
 Plug('TimUntersberger/neogit')
 Plug('nvim-lua/plenary.nvim')
+Plug('airblade/vim-gitgutter')
 Plug('Yggdroot/indentLine')
 Plug('psf/black')
 Plug('simeji/winresizer') --Ctrl + e e poi hjkl

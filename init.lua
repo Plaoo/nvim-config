@@ -8,6 +8,7 @@ require('plugins/lualine')
 require('plugins/lspconfig')
 require('plugins/zig')
 require('plugins/fzf')
+require('plugins/treesitter')
 
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.zls.setup{}
