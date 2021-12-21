@@ -10,8 +10,3 @@ require('plugins/fzf')
 require('plugins/treesitter')
 require('plugins/coq')
 require('plugins/lspconfig')
-require('languages/pyright_lsp')
-require('languages/zls_lsp')
-require('languages/jsonls_lsp')
-require('languages/clangd_lsp')
-
