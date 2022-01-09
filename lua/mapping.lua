@@ -29,6 +29,5 @@ map('n', '<C-h>',       ':bprev<CR>', default_opts)
 map('n', '<C-d>',       ':bd<CR>', default_opts)
 map('n', '<C-l>',       ':bnext<CR>', default_opts)
 map('n', '<C-h>',       ':bprev<CR>', default_opts)
-map('n', '<F2>',	':Vista<CR>', default_opts)
 map('n', '<F5>',	':COQnow<CR>', default_opts)
 
