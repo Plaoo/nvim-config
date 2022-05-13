@@ -9,4 +9,5 @@ require('plugins/treesitter')
 require('plugins/coq')
 require('plugins/lspconfig')
 require('plugins/nvim-web-devicons-config')
+require('plugins/vimwiki')
 
