@@ -7,7 +7,6 @@ g.mapleader = " "             -- change leader to a space
 --g.mapleader = "<Space>"
 --g.maplocalleader = "<Space>"
 map('n', '<C-b>',       ':Buffers<CR>', default_opts)
-map('n', '<Leader>ff',  ':Ag ', default_opts)
 map('n', '<Leader>gb',  ':Git blame<CR>', default_opts)
 map('n', '<leader>gg',  ':Neogit<CR>', default_opts)
 map('n', "<Leader>q'",  "ciw''<Esc>P", default_opts)
@@ -19,10 +18,7 @@ map('n', '<Leader>cc',  ':call Generate_comments() <CR>', default_opts)
 map('n', '<Leader>ii',  ':e ~/.config/nvim/ <CR>', default_opts)
 map('n', '<Leader>bf',  ':Black<CR>', default_opts)
 map('n', '<Leader>ss',  ':w<CR>', default_opts)
-map('n', '<Leader>nn',  ':NvimTreeOpen<CR>', default_opts)
 map('n', '<Leader>pp',  ':NvimTreeFindFile<CR>', default_opts)
-map('n', '<Leader>ll',  ':Files<CR>', default_opts)
-
 --map('n', '<Leader>cc',  ':call Generate_comments() <CR>', default_opts)
 map('n', '<C-l>',       ':bnext<CR>', default_opts)
 map('n', '<C-h>',       ':bprev<CR>', default_opts)
@@ -31,4 +27,9 @@ map('n', '<C-l>',       ':bnext<CR>', default_opts)
 map('n', '<C-h>',       ':bprev<CR>', default_opts)
 map('n', '<F5>',	':COQnow<CR>', default_opts)
 map('n', '<F2>',	':SymbolsOutline<CR>', default_opts)
+--Telescope
+map('n', '<Leader>ll',  ':Telescope find_files hidden=true<CR>', default_opts)
+map('n', '<Leader>ff',  ':Telescope live_grep<CR>', default_opts)
+map('n', '<Leader>ee',  ':Telescope diagnostics<CR>', default_opts)
+map('n', '<Leader>nn',  ':Telescope file_browser<CR>', default_opts)
 
