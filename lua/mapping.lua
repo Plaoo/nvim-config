@@ -27,6 +27,7 @@ map('n', '<C-l>',       ':bnext<CR>', default_opts)
 map('n', '<C-h>',       ':bprev<CR>', default_opts)
 map('n', '<F5>',	':COQnow<CR>', default_opts)
 map('n', '<F2>',	':SymbolsOutline<CR>', default_opts)
+
 --Telescope
 map('n', '<Leader>ll',  ':Telescope find_files hidden=true<CR>', default_opts)
 map('n', '<Leader>ff',  ':Telescope live_grep<CR>', default_opts)

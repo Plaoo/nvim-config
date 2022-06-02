@@ -11,4 +11,5 @@ require('plugins/lspconfig')
 require('plugins/nvim-web-devicons-config')
 require('plugins/vimwiki')
 require('plugins/telescopeconfig')
+
 require('telescope').setup{  defaults = { file_ignore_patterns = { "plugged", ".git", "__pycache__" }} }
