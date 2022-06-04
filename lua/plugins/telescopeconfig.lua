@@ -5,6 +5,7 @@ end
 
 local actions = require "telescope.actions"
 
+
 telescope.setup {
   defaults = {
 
@@ -109,13 +110,17 @@ telescope.setup {
     ["ui-select"] = {
       require("telescope.themes").get_cursor(),
     },
-  },
+--    vim_bookmarks = {
+--      tail_path=true,
+--      shorten_path=true
+--    },
+}
 }
 
-require("telescope").load_extension "file_browser"
+require("telescope").load_extension("file_browser")
+--require('telescope').load_extension('vim_bookmarks')
 
 
--- my telescopic customizations
 local M = {}
 
 
@@ -146,3 +151,13 @@ M.project_files = function()
     require("telescope.builtin").find_files(fopts)
   end
 end
+
+--M.custom_vim_bookmarks = function()
+--  local settings = {}
+--  settings.tail_path=true
+--  settings.shorten_path=true
+--  require('telescope').extensions.vim_bookmarks.all(settings)
+--end
+
+--return M
+

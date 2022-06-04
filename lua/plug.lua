@@ -13,12 +13,12 @@ Plug('ap/vim-buftabline')
 Plug('terryma/vim-multiple-cursors')
 Plug('hoob3rt/lualine.nvim')
 Plug('MattesGroeger/vim-bookmarks')
---Plug('junegunn/fzf', {
---	['do'] = function()
---	  vim.call('fzf#install')
---	end
---      })
---Plug('junegunn/fzf.vim')
+Plug('junegunn/fzf', {
+	['do'] = function()
+	  vim.call('fzf#install')
+	end
+      })
+Plug('junegunn/fzf.vim')
 Plug('liuchengxu/vista.vim')
 --Plug('kyazdani42/nvim-tree.lua')
 Plug('neovim/nvim-lspconfig')
@@ -41,8 +41,13 @@ Plug ('glepnir/lspsaga.nvim')
 Plug ('simrat39/symbols-outline.nvim')
 --Plug ('vimwiki/vimwiki')
 Plug 'nvim-lua/plenary.nvim'
-Plug ('nvim-telescope/telescope.nvim')
-Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug('fatih/vim-go')
+Plug('kdheepak/lazygit.nvim')
+
+-- Telescope and plugins
+Plug ('nvim-telescope/telescope.nvim')
+Plug ('nvim-telescope/telescope-file-browser.nvim')
+Plug ('nvim-telescope/telescope-fzf-native.nvim')
+--Plug ('tom-anders/telescope-vim-bookmarks.nvim')
 
 vim.call('plug#end')

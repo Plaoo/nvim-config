@@ -33,4 +33,7 @@ map('n', '<Leader>ll',  ':Telescope find_files hidden=true<CR>', default_opts)
 map('n', '<Leader>ff',  ':Telescope live_grep<CR>', default_opts)
 map('n', '<Leader>ee',  ':Telescope diagnostics<CR>', default_opts)
 map('n', '<Leader>nn',  ':Telescope file_browser<CR>', default_opts)
+map('n', '<Leader>bb',  ':Telescope buffers<CR>', default_opts)
+map('n', '<Leader>bm',  ':Telescope vim_bookmarks all<CR>', default_opts)
+map('n', '<Leader>bc',  ':Telescope vim_bookmarks current_file<CR>', default_opts)
 
