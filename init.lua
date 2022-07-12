@@ -1,7 +1,7 @@
 require('plug')
 require('settings')
 require('mapping')
---require('plugins/nvim-tree')
+require('plugins/nvim-tree')
 require('plugins/lualine')
 require('plugins/zig')
 --require('plugins/fzf')
