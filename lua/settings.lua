@@ -67,4 +67,4 @@ opt.shortmess:append "sI"
 -----------------------------------------------------------
 opt.termguicolors = true      -- enable 24-bit RGB colors
 
-cmd [[colorscheme dracula]]
+cmd [[colorscheme omni]]
