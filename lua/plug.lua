@@ -13,12 +13,12 @@ Plug('ap/vim-buftabline')
 Plug('terryma/vim-multiple-cursors')
 Plug('hoob3rt/lualine.nvim')
 Plug('MattesGroeger/vim-bookmarks')
---Plug('junegunn/fzf', {
---	['do'] = function()
---	  vim.call('fzf#install')
---	end
---      })
---Plug('junegunn/fzf.vim')
+Plug('junegunn/fzf', {
+	['do'] = function()
+	  vim.call('fzf#install')
+	end
+      })
+Plug('junegunn/fzf.vim')
 Plug('liuchengxu/vista.vim')
 Plug('kyazdani42/nvim-tree.lua')
 Plug('neovim/nvim-lspconfig')
@@ -64,5 +64,7 @@ Plug('EdenEast/nightfox.nvim')
 Plug('bluz71/vim-moonfly-colors')
 Plug('NTBBloodbath/doom-one.nvim')
 Plug('yonlu/omni.vim')
+-- Elixir
+Plug('elixir-editors/vim-elixir')
 
 vim.call('plug#end')
